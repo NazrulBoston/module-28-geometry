@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="mt-8">
         <!-- main container -->
         <div class="flex flex-col lg:flex-row ">
             <!-- shape container -->
@@ -76,6 +76,28 @@
 
                     </div>
                 </div>
+
+                    <!--Ellipse card -->
+                <div class="card card-compact bg-base-100 shadow-xl">
+                    <figure><img src="/images/ellipse.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Ellipse</h2>
+                        <p>Area (A) = πab </p>
+                        <p>
+                            <input type="text" class="border text-lg w-24 bg-gray-200 ml-2 pl-2" name=""
+                                id="ellipse-major-radius" placeholder="major">
+                            <span class="ml-3">cm</span>
+                            <input type="text" class="border text-lg w-24 bg-gray-200 ml-4 pl-2" name=""
+                                id="ellipse-minor-radius" placeholder="minor">
+                            <span class="ml-3">cm</span>
+                        </p>
+                        <p class="text-2xl text-purple-900">Area: <span id="ellipse-area">0</span> cm<sup>2</sup></p>
+
+                        <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
+
+                    </div>
+                </div>
+                
                 <!-- second card -->
                 <div class="card card-compact bg-base-100 shadow-xl">
                     <figure><img src="/images/triangle.png" alt="Shoes" /></figure>
@@ -102,7 +124,7 @@
 
             <!-- area calculator -->
             <div class="w-[400px]">
-                <div>Area Calculation</div>
+                <div class="text-center">Area Calculation</div>
             </div>
 
 
