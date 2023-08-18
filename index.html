@@ -56,6 +56,26 @@
 
                     </div>
                 </div>
+                <!--Parallelogram card -->
+                <div class="card card-compact bg-base-100 shadow-xl">
+                    <figure><img src="/images/parallelogram.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">parallelogram</h2>
+                        <p>Area (A) = w X l</p>
+                        <p>
+                            <input type="text" class="border text-lg w-24 bg-gray-200 ml-2 pl-2" name=""
+                                id="parallelogram-base" placeholder="base">
+                            <span class="ml-3">cm</span>
+                            <input type="text" class="border text-lg w-24 bg-gray-200 ml-4 pl-2" name=""
+                                id="parallelogram-height" placeholder="height">
+                            <span class="ml-3">cm</span>
+                        </p>
+                        <p class="text-2xl text-purple-900">Area: <span id="parallelogram-area">0</span> cm<sup>2</sup></p>
+
+                        <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
+
+                    </div>
+                </div>
                 <!-- second card -->
                 <div class="card card-compact bg-base-100 shadow-xl">
                     <figure><img src="/images/triangle.png" alt="Shoes" /></figure>
